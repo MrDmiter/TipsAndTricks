@@ -2,7 +2,6 @@ package pages;
 
 import base.AbstractTest;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -10,7 +9,7 @@ public abstract class AbstractPage {
 
     // Instance of BaseTest
     protected AbstractTest testClass;
-    
+
     // Web Elements
     @FindBy(xpath = "//div/a[@class='login']")
     private WebElement stickySignInBtn;
@@ -19,7 +18,6 @@ public abstract class AbstractPage {
             xpath =
                     "//ul[@class='sf-menu clearfix menu-content sf-js-enabled sf-arrows']/li/a[@title='T-shirts']")
     private WebElement tShirts;
-
 
     /**
      * Constructor
@@ -41,7 +39,4 @@ public abstract class AbstractPage {
         stickySignInBtn.click();
         return new SignInPage(testClass);
     }
-
-
-
 }

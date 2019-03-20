@@ -3,7 +3,6 @@ package base;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Set;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Rule;
@@ -23,7 +22,6 @@ public class AbstractTest {
     // Instances of the Webdriver and WebdriverWait
     private WebDriver driver;
     private WebDriverWait wait;
-
 
     // Logger
     private Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
@@ -97,12 +95,10 @@ public class AbstractTest {
     }
 
     public void waitTillTextToBePresentInElementValue(String locator, int expectedValue) {
-        wait.until(ExpectedConditions.
-                textToBePresentInElementValue(
+        wait.until(
+                ExpectedConditions.textToBePresentInElementValue(
                         By.xpath(locator), String.valueOf(expectedValue)));
     }
-
-
 
     /**
      * Get current date and time
@@ -113,10 +109,16 @@ public class AbstractTest {
         return new SimpleDateFormat("YYYY-MM-dd_HH-mm-ss").format(Calendar.getInstance().getTime());
     }
 
-    public void getCookies(){
+    /** Get cookies */
+    public void getCookies() {
         Set<Cookie> cookies = getDriver().manage().getCookies();
         for (Cookie cookie : cookies) {
-            System.out.println("Cookie name - " + cookie.getName() + ": " + "Cookie value - " + cookie.getValue());
+            System.out.println(
+                    "Cookie name - "
+                            + cookie.getName()
+                            + " "
+                            + "Cookie value - "
+                            + cookie.getValue());
         }
     }
 
