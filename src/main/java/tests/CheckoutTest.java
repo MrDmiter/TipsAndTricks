@@ -23,7 +23,7 @@ public class CheckoutTest extends AbstractTest {
         log("Signed in into account");
 
         // Hover over women tab
-        myAccountPage.focusOnElement();
+        myAccountPage.focusOnWomenTab();
         log("Hovered over women tab");
 
         // Click on the "evening dresses"
@@ -35,7 +35,7 @@ public class CheckoutTest extends AbstractTest {
         log("Clicked on the product by its name");
 
         // Click on color filter
-        productPage.clickOnPinkColor();
+        productPage.clickOnColor("Pink");
         log("Clicked on filter");
 
         // Select size in dropdown (S,M,L)
@@ -47,7 +47,7 @@ public class CheckoutTest extends AbstractTest {
         log("Added to cart and continue shopping");
 
         // Verify parameters of the added product in the cart
-        productPage.hoverOverShopCartAndVerifyColorAndSize();
+        productPage.hoverOverShopCartAndVerifyColorAndSize("Pink", "L");
         log("Verified parametrs of the added product");
 
         // Remove product from cart
