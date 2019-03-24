@@ -8,11 +8,10 @@ import org.openqa.selenium.Keys;
 public class EveningDressesPage extends AbstractPage {
 
     private String PRODUCT_DETAILS_XPATH = "//h5[@itemprop='name']/a[contains(., '%s')]";
-    public String initialWindow;
+
     // Constructor
     public EveningDressesPage(AbstractTest testClass) {
         super(testClass);
-
     }
 
     /**
@@ -21,7 +20,6 @@ public class EveningDressesPage extends AbstractPage {
      * @param nameOfProduct
      * @return entity of the product page
      */
-
     public ProductPage clickOnProduct(String nameOfProduct) {
         testClass
                 .getDriver()
