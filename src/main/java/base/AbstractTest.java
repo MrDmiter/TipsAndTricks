@@ -110,7 +110,7 @@ public class AbstractTest {
     }
 
     /** Get cookies */
-    public void getCookies() {
+    public void getCookiesAndPrintInConsole() {
         Set<Cookie> cookies = getDriver().manage().getCookies();
         for (Cookie cookie : cookies) {
             System.out.println(

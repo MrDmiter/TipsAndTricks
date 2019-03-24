@@ -25,7 +25,7 @@ public class MyAccountPage extends AbstractPage {
     }
 
     /** Hover over Women tab */
-    public void focusOnElement() {
+    public void focusOnWomenTab() {
         Actions builder = new Actions(testClass.getDriver());
         builder.moveToElement(dresses).build().perform();
         testClass.waitElementToBeVisible(eveningDresses);
