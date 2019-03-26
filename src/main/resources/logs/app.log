@@ -1,0 +1,86 @@
+2019-55-24 23:55:54.314 [main] INFO   - Opened Site
+2019-55-24 23:55:56.486 [main] INFO   - Entered the signIn page
+2019-55-24 23:55:59.217 [main] INFO   - Signed in into account
+2019-55-24 23:55:59.874 [main] INFO   - Hovered over women tab
+2019-56-24 23:56:02.751 [main] INFO   - Clicked on the "evening dresses"
+2019-56-24 23:56:02.935 [main] INFO   - Clicked on the product by its name
+2019-56-24 23:56:05.249 [main] INFO   - Clicked on filter
+2019-56-24 23:56:05.467 [main] INFO   - Selected size
+2019-56-24 23:56:06.934 [main] INFO   - Added to cart and continue shopping
+2019-56-24 23:56:07.683 [main] INFO   - Verified parametrs of the added product
+2019-56-24 23:56:07.851 [main] INFO   - Removed from cart
+2019-56-24 23:56:09.095 [main] INFO   - Verified that cart is empty
+2019-31-26 22:31:12.317 [main] INFO   - Opened Site
+2019-31-26 22:31:14.611 [main] INFO   - Entered the signIn page
+2019-31-26 22:31:18.004 [main] INFO   - Signed in into account
+2019-31-26 22:31:18.112 [main] INFO   - Hovered over women tab
+2019-31-26 22:31:21.119 [main] INFO   - Clicked on the "evening dresses"
+2019-31-26 22:31:21.326 [main] INFO   - Clicked on the product by its name
+2019-31-26 22:31:23.740 [main] INFO   - Clicked on filter
+2019-31-26 22:31:24.056 [main] INFO   - Selected size
+2019-31-26 22:31:25.530 [main] INFO   - Added to cart and continue shopping
+2019-31-26 22:31:25.791 [main] INFO   - Verified parametrs of the added product
+2019-31-26 22:31:26.039 [main] INFO   - Removed from cart
+2019-31-26 22:31:27.359 [main] INFO   - Verified that cart is empty
+2019-36-26 22:36:44.480 [main] INFO   - Opened Site
+2019-36-26 22:36:46.703 [main] INFO   - Entered the signIn page
+2019-36-26 22:36:49.546 [main] INFO   - Signed in into account
+2019-36-26 22:36:49.646 [main] INFO   - Hovered over women tab
+2019-36-26 22:36:52.425 [main] INFO   - Clicked on the "evening dresses"
+2019-36-26 22:36:52.626 [main] INFO   - Clicked on the product by its name
+2019-36-26 22:36:54.668 [main] INFO   - Clicked on filter
+2019-36-26 22:36:54.918 [main] INFO   - Selected size
+2019-36-26 22:36:56.441 [main] INFO   - Added to cart and continue shopping
+2019-36-26 22:36:56.687 [main] INFO   - Verified parametrs of the added product
+2019-36-26 22:36:56.931 [main] INFO   - Removed from cart
+2019-36-26 22:36:58.264 [main] INFO   - Verified that cart is empty
+2019-56-26 22:56:27.532 [main] INFO   - Opened Site
+2019-56-26 22:56:29.777 [main] INFO   - Entered the signIn page
+2019-56-26 22:56:32.611 [main] INFO   - Signed in into account
+2019-56-26 22:56:32.734 [main] INFO   - Hovered over women tab
+2019-56-26 22:56:35.655 [main] INFO   - Clicked on the "evening dresses"
+2019-56-26 22:56:35.853 [main] INFO   - Clicked on the product by its name
+2019-56-26 22:56:38.124 [main] INFO   - Clicked on filter
+2019-56-26 22:56:38.372 [main] INFO   - Selected size
+2019-56-26 22:56:39.913 [main] INFO   - Added to cart and continue shopping
+2019-56-26 22:56:40.164 [main] INFO   - Verified parametrs of the added product
+2019-56-26 22:56:40.403 [main] INFO   - Removed from cart
+2019-56-26 22:56:42.199 [main] INFO   - Verified that cart is empty
+2019-58-26 22:58:42.420 [main] INFO   - Opened Site
+2019-58-26 22:58:45.364 [main] INFO   - Entered the signIn page
+2019-58-26 22:58:48.341 [main] INFO   - Signed in into account
+2019-58-26 22:58:48.486 [main] INFO   - Hovered over women tab
+2019-58-26 22:58:51.941 [main] INFO   - Clicked on the "evening dresses"
+2019-58-26 22:58:52.148 [main] INFO   - Clicked on the product by its name
+2019-58-26 22:58:54.324 [main] INFO   - Clicked on filter
+2019-58-26 22:58:54.579 [main] INFO   - Selected size
+2019-58-26 22:58:56.160 [main] INFO   - Added to cart and continue shopping
+2019-58-26 22:58:56.421 [main] INFO   - Verified parametrs of the added product
+2019-58-26 22:58:56.639 [main] INFO   - Removed from cart
+2019-58-26 22:58:57.890 [main] INFO   - Verified that cart is empty
+2019-02-26 23:02:08.431 [main] INFO   - Opened Site
+2019-02-26 23:02:11.138 [main] INFO   - Entered the signIn page
+2019-02-26 23:02:13.791 [main] INFO   - Signed in into account
+2019-02-26 23:02:13.892 [main] INFO   - Hovered over women tab
+2019-02-26 23:02:16.814 [main] INFO   - Clicked on the "evening dresses"
+2019-02-26 23:02:17.035 [main] INFO   - Clicked on the product by its name
+2019-02-26 23:02:19.185 [main] INFO   - Clicked on filter
+2019-02-26 23:02:19.427 [main] INFO   - Selected size
+2019-02-26 23:02:21.496 [main] INFO   - Added to cart and continue shopping
+2019-02-26 23:02:21.731 [main] INFO   - Verified parametrs of the added product
+2019-02-26 23:02:21.991 [main] INFO   - Removed from cart
+2019-02-26 23:02:23.240 [main] INFO   - Verified that cart is empty
+2019-02-26 23:02:23.314 [main] INFO   - Tab is closed
+2019-10-26 23:10:47.448 [main] INFO   - Opened Site
+2019-10-26 23:10:49.650 [main] INFO   - Entered the signIn page
+2019-10-26 23:10:52.286 [main] INFO   - Signed in into account
+2019-10-26 23:10:52.409 [main] INFO   - Hovered over women tab
+2019-10-26 23:10:55.492 [main] INFO   - Clicked on the "evening dresses"
+2019-10-26 23:10:55.715 [main] INFO   - Clicked on the product by its name
+2019-10-26 23:10:58.909 [main] INFO   - Clicked on filter
+2019-10-26 23:10:59.171 [main] INFO   - Selected size
+2019-11-26 23:11:01.238 [main] INFO   - Added to cart and continue shopping
+2019-11-26 23:11:01.473 [main] INFO   - Verified parametrs of the added product
+2019-11-26 23:11:01.666 [main] INFO   - Removed from cart
+2019-11-26 23:11:03.399 [main] INFO   - Verified that cart is empty
+2019-11-26 23:11:03.527 [main] INFO   - Tab is closed

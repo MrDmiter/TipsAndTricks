@@ -35,6 +35,6 @@ public class EveningDressesPage extends AbstractPage {
         }
         testClass.getDriver().switchTo().window(newWindow);
 
-        return new ProductPage(testClass);
+        return new ProductPage(testClass, initialWindow);
     }
 }

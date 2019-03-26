@@ -1,18 +1,23 @@
 package pages;
 
 import base.AbstractTest;
-import java.util.Set;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import static org.apache.commons.lang3.text.WordUtils.capitalize;
+
 public class ProductPage extends AbstractPage {
 
     // Web elements
     @FindBy(xpath = "//li/a[@name='Pink']")
     private WebElement pinkColor;
+
+    @FindBy(xpath = "//li/a[@name='Beige']")
+    private WebElement beigeColor;
 
     @FindBy(xpath = "//span[contains(.,'Add to cart')]")
     private WebElement cart;
@@ -35,18 +40,28 @@ public class ProductPage extends AbstractPage {
     @FindBy(xpath = "//select[@name='group_1']")
     private WebElement dropdownField;
 
+    //Variable repreents first tab
+    private String initialWindow;
+
     /**
      * Constructor
      *
      * @param testClass
      */
-    public ProductPage(AbstractTest testClass) {
+    public ProductPage(AbstractTest testClass, String initWind) {
         super(testClass);
+        this.initialWindow = initWind;
     }
 
-    /** Choose pink color */
-    public void clickOnPinkColor() {
-        pinkColor.click();
+    /**
+     * Choose pink color
+     */
+    public void clickOnColor(String color) {
+        if (color.toLowerCase().equals("pink")) {
+            pinkColor.click();
+        } else {
+            beigeColor.click();
+        }
     }
 
     /**
@@ -59,41 +74,53 @@ public class ProductPage extends AbstractPage {
         dropdown.selectByVisibleText(size);
     }
 
-    /** Add to cart and continue shopping */
+    /**
+     * Add to cart and continue shopping
+     */
     public void addToCartAndContinueShopping() {
+        testClass.waitElementToBeClickable(cart);
         cart.click();
         testClass.waitElementToBeVisible(continueShoppingbtn);
         continueShoppingbtn.click();
     }
 
-    /** Verify chosen color and size in the cart */
-    public void hoverOverShopCartAndVerifyColorAndSize() {
+    /**
+     * Verify chosen color and size in the cart
+     */
+    public void hoverOverShopCartAndVerifyColorAndSize(String color, String size) {
         Actions action = new Actions(testClass.getDriver());
         action.moveToElement(viewCart).build().perform();
         testClass.waitElementToBeVisible(orderAtributes);
-        Assert.assertEquals("Pink, L", orderAtributes.getText());
+        String expectedResult = capitalize(color) + ", " + capitalize(size);
+        Assert.assertEquals(expectedResult, orderAtributes.getText());
     }
 
-    /** Remove product from cart */
+    /**
+     * Remove product from cart
+     */
     public void removeProductFromCart() {
         testClass.waitElementToBeClickable(removeProductFromCartbtn);
         removeProductFromCartbtn.click();
     }
 
-    /** Verify that cart is empty, close open tab and come back to initial tab */
+    /**
+     * Verify that cart is empty, close open tab and come back to initial tab
+     */
     public void verifyCartIsEmpty() {
         testClass.waitElementToBeVisible(cartIsEmpty);
         Assert.assertEquals("(empty)", cartIsEmpty.getText());
-        String actualWindow = testClass.getDriver().getWindowHandle();
-        Set<String> windowHandles = testClass.getDriver().getWindowHandles();
-        String windowToSwitchTo = null;
-        for (String windowHandle : windowHandles) {
-            if (windowHandle != actualWindow) {
-                windowToSwitchTo = windowHandle;
-            }
-        }
-        testClass.getDriver().switchTo().window(windowToSwitchTo);
-        testClass.getCookies();
+    }
+
+    public void closeTab() {
+//        String actualWindow = testClass.getDriver().getWindowHandle();
+//        Set<String> windowHandles = testClass.getDriver().getWindowHandles();
+//        String windowToSwitchTo = null;
+//        for (String windowHandle : windowHandles) {
+//            if (windowHandle != actualWindow) {
+//                windowToSwitchTo = windowHandle;
+//            }
+//        }
+        testClass.getDriver().switchTo().window(initialWindow);
         testClass.getDriver().close();
     }
 }

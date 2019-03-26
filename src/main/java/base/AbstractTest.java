@@ -109,18 +109,7 @@ public class AbstractTest {
         return new SimpleDateFormat("YYYY-MM-dd_HH-mm-ss").format(Calendar.getInstance().getTime());
     }
 
-    /** Get cookies */
-    public void getCookies() {
-        Set<Cookie> cookies = getDriver().manage().getCookies();
-        for (Cookie cookie : cookies) {
-            System.out.println(
-                    "Cookie name - "
-                            + cookie.getName()
-                            + " "
-                            + "Cookie value - "
-                            + cookie.getValue());
-        }
-    }
+
 
     /** Close site */
     public void closeSite() {
