@@ -10,6 +10,7 @@
 2019-56-24 23:56:07.683 [main] INFO   - Verified parametrs of the added product
 2019-56-24 23:56:07.851 [main] INFO   - Removed from cart
 2019-56-24 23:56:09.095 [main] INFO   - Verified that cart is empty
+<<<<<<< HEAD
 2019-31-26 22:31:12.317 [main] INFO   - Opened Site
 2019-31-26 22:31:14.611 [main] INFO   - Entered the signIn page
 2019-31-26 22:31:18.004 [main] INFO   - Signed in into account
@@ -84,3 +85,5 @@
 2019-11-26 23:11:01.666 [main] INFO   - Removed from cart
 2019-11-26 23:11:03.399 [main] INFO   - Verified that cart is empty
 2019-11-26 23:11:03.527 [main] INFO   - Tab is closed
+=======
+>>>>>>> d6febbce812b60a78225df08620100c064d29939

@@ -1,7 +1,6 @@
 package pages;
 
 import base.AbstractTest;
-
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -9,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import static org.apache.commons.lang3.text.WordUtils.capitalize;
+
 
 public class ProductPage extends AbstractPage {
 
